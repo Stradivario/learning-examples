@@ -14,7 +14,7 @@ const { Stage } = require("./stage");
 
 const zooData = [
   { name: "Elephant", color: "gray", weight: 1500, mana: 20 },
-  { name: "Tiger", color: "yellow-stripes", weight: 300, mana: 300 },
+  { name: "Tiger", color: "pink-stripes", weight: 300, mana: 300 },
   { name: "Monkey", color: "black", weight: 20, mana: 1 },
 ];
 
