@@ -17,7 +17,7 @@ module.exports.Building = class Building {
   }
 
   removeAnimal(animal) {
-    this.animals = this.animals.filter((a) => a.name === animal.name);
+    this.animals = this.animals.filter((a) => a.getName() !== animal.getName());
   }
 
   canContain(animal) {

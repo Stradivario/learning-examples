@@ -18,12 +18,19 @@ module.exports.Animal = class Animal {
 
   fight(animal) {
     return (
-      this.config.weight > animal.config.weight ||
-      this.config.mana > animal.config.mana
+      this.getWeight() > animal.getWeight() || this.getMana() > animal.getMana()
     );
   }
 
   getWeight() {
     return this.config.weight;
+  }
+
+  getMana() {
+    return this.config.weight;
+  }
+
+  getName() {
+    return this.name;
   }
 };
