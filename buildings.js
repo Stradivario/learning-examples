@@ -21,6 +21,6 @@ module.exports.Building = class Building {
   }
 
   canContain(animal) {
-    return animal.getWeight() < this.size;
+    return animal.getSize() < this.size;
   }
 };
