@@ -10,11 +10,15 @@ module.exports.Animal = class Animal {
 
   getUp() {}
 
-  shit() {}
+  shit() {
+    this.config.weight -= 10;
+   }
 
   piss() {}
 
-  eat() {}
+  eat() { 
+    this.config.weight += 20;
+  }
 
   fight(animal) {
     return (
@@ -27,10 +31,14 @@ module.exports.Animal = class Animal {
   }
 
   getMana() {
-    return this.config.weight;
+    return this.config.mana;
   }
 
   getName() {
     return this.name;
+  }
+
+  getSize() {
+    return this.config.size;
   }
 };
