@@ -1,0 +1,1 @@
+This is an example learning project representing Zoo with Animals and Buildings
