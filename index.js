@@ -34,7 +34,16 @@ monkeyBuilding.addAnimal(tiger);
 monkeyBuilding.addAnimal(monkey);
 monkeyBuilding.addAnimal(orangutan);
 
+let monkeyExists = monkeyBuilding.checkIfAnimalInBuilding(monkey);
+console.log("Animal exists: "+monkeyExists);
+
+let tigerExists = monkeyBuilding.checkIfAnimalInBuilding(tiger);
+console.log("Animal exists: "+tigerExists);
+
 let animalsInBuilding = monkeyBuilding.getAnimals();
+for(var i=0; i<animalsInBuilding.length; i++){
+  console.log(animalsInBuilding[i]);
+}
 
 tiger.eat()
 console.log('[weight of animal after eating]', tiger);

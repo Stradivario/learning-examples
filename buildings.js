@@ -23,4 +23,13 @@ module.exports.Building = class Building {
   canContain(animal) {
     return animal.getSize() < this.size;
   }
+
+  checkIfAnimalInBuilding(animal){
+    let animalExistArray = this.animals.filter((item)=> item.getName() == animal.getName());
+    if(animalExistArray.length >0){
+      return true;
+    }else{
+      return false;
+    }
+  }
 };
